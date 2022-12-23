@@ -1,0 +1,88 @@
+body{
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  margin:0;
+}
+h1{
+  font: italic bold 60px helvetica;
+  text-align: center;
+}
+img{
+  width: 150px;
+  height: 150px;
+}
+.grid{
+  display: inline-grid;
+  grid-template-columns: auto auto auto auto;  
+  margin-left: 8%;
+}
+.grid > div{
+   background-color: red;
+  position: relative;
+  top: -10px;
+  color: transparent;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 40px;
+  height: 70px;
+  width: 70px;
+  border: 2px solid black;
+  
+}
+button{
+  position: absolute;
+  
+  background-color: yellow;
+  border: 1px solid black;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  font-size: 30px;
+  
+}
+button:hover{
+  background-color: blue;
+  color: white;
+}
+button:focus{
+ background-color: green;
+  color: white;
+}
+@keyframes clickAnim{
+  50%{
+    transform: scale(1.2);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+
+#up{
+  bottom: 140px;
+  right: 180px;
+}
+#down{
+  bottom: 80px;
+  right: 180px;
+}
+#left{
+  bottom: 80px;
+  right: 240px;
+}
+#right{
+  bottom: 80px;
+  right: 120px;
+}
+
+#refresh_img{
+  width: 100px;
+  height: 100px;
+  position:absolute;
+  top: 235px;
+  right: 160px;
+  
+}
+#refresh_img:hover{
+  transform: scale(1.2);
+}
